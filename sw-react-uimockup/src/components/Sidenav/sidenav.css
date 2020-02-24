@@ -1,0 +1,59 @@
+.sidenav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #042235;
+    width: 80px;
+    color: white;
+    box-shadow: inset -4px 0px 4px rgba(2, 15, 24, 0.569466), inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+.swlogo {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.sidetile {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  height:80px
+}
+
+.sidetile:hover {
+  background-color: #2995DA;
+  opacity: 0.5;
+  width: 100%;
+}
+
+
+.sidetile:last-child {
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.current-sidetile {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #2995da;
+  height:80px;
+  width:100%;
+}
+
+/* .sidetile-logo {
+  z-index: 2;
+} */
+
+/* .current-sidetile-logo {
+  margin: 24px 0px;
+} */

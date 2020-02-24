@@ -1,0 +1,97 @@
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  left: 80px;
+  width: calc(100% - 80px);
+  height: 80px;
+  font-size: 1.2rem;
+  font-family: "Proxima Nova";
+  background-color: #ffffff;
+  border-bottom: 2px solid #e2e2e2;
+  align-items: center;
+  z-index: 1;
+}
+
+.navbar-app-name {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0px 38px;
+
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1919;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border-right: 2px solid #e2e2e2;
+}
+
+.navbar-breadcrumbs {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 27px;
+
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  color: #000000;
+}
+
+.navbar-settings {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  width: 100%;
+  right: 5.25%;
+  align-items: center;
+}
+
+.navbar-mail {
+  display: flex;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.navbar-mail:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+
+/* .navbar-badge{
+    position: absolute;
+    z-index: 1;
+} */
+
+.navbar-greetings {
+  display: flex;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin: 0px 10px;
+}
+
+.navbar-dp {
+  display: flex;
+  padding: 0px 5px;
+}
+
+.navbar-caret {
+  display: flex;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.navbar-caret:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: all 0.5s;
+}

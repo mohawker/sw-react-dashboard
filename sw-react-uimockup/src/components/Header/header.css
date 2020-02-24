@@ -1,0 +1,152 @@
+.header {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 80px;
+  left: 80px;
+  width: calc(100% - 80px);
+  height: 146px;
+  font-size: 1.2rem;
+  font-family: "Proxima Nova";
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.05);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 96px;
+}
+
+.header-icon {
+  display: flex;
+  margin-left: 42px;
+  padding: 0px 0px;
+  width: 34px;
+  height: 34px;
+}
+
+.header-title {
+  display: flex;
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  padding: 0px 10px;
+}
+
+.header-button {
+  display: flex;
+  margin-left: auto;
+  margin-right: 2.5%;
+  background: #40d2bf;
+  border-radius: 4px;
+  height: 36px;
+  align-items: center;
+  cursor: pointer;
+  padding: 0px 0px;
+}
+
+.header-button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.header-button-icon {
+  display: flex;
+  padding: 0px 10px;
+  height: 16px;
+  width: 16px;
+}
+
+.header-button-text {
+  display: flex;
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 0px 10px;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.header-tabs{
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+  cursor: pointer;
+  margin: 0px 20px;
+}
+
+.header-tabs-current{
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+  cursor: pointer;
+  margin: 0px 20px;
+  border-bottom: 3px solid #0083e3;
+}
+
+.header-tabs-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: hsl(0, 0%, 60%);
+}
+
+.header-tabs-text:hover{
+  color: #000000;
+}
+
+.header-tabs-current-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0083E3;
+}
+
+.header-search-logo {
+  display: flex;
+  padding: 0px 15px;
+  margin-left: auto;
+  width: 15.71px;
+  height: 15.71px;
+}
+
+.header input[type="text"] {
+  display: flex;
+  margin-right: 5.67%;
+  padding: 0px 0px;
+  border: 0px;
+
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
