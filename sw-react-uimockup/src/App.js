@@ -1,18 +1,25 @@
 import React, { Component } from "react";
+import axios from "axios";
 // CSS File
 import "./App.css";
 // Components
 import Sidenav from "./components/Sidenav/Sidenav";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
+import Content from "./components/Content/Content";
+import ActivityFeed from "./components/ActivityFeed/ActivityFeed";
 
 export class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      AllSelect: true,
-      FavSelect: false,
-      ArcSelect: false,
+      loading: false,
+      select: "All",
+      activities: [],
+      currentUser: {},
+      AllTeams: [],
+      FavoriteTeams: [],
+      ArchivedTeams: [],
       AllStyle: "header-tabs-current",
       FavStyle: "header-tabs",
       ArcStyle: "header-tabs"
@@ -22,45 +29,65 @@ export class App extends Component {
     this.changeTabArc = this.changeTabArc.bind(this);
   }
 
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  // fetch data from JSON-Server API & filter data
+  fetchData = () => {
+    this.setState({ loading: true });
+    axios
+      .get("https://sw-test-api.herokuapp.com/db")
+      .then(res => {
+        this.setState({
+          loading: false,
+          data: res.data,
+          AllTeams: res.data.teams,
+          FavoriteTeams: res.data.teams.filter(teams => teams.is_favorited),
+          ArchivedTeams: res.data.teams.filter(teams => teams.is_archived),
+          activities: res.data.activities,
+          currentUser: res.data.current_user
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+
   changeTabAll() {
     this.setState({
-      AllSelect: true,
-      FavSelect: false,
-      ArcSelect: false,
       AllStyle: "header-tabs-current",
       FavStyle: "header-tabs",
-      ArcStyle: "header-tabs"
+      ArcStyle: "header-tabs",
+      select: "All"
     });
   }
 
   changeTabFav() {
     this.setState({
-      AllSelect: false,
-      FavSelect: true,
-      ArcSelect: false,
       AllStyle: "header-tabs",
       FavStyle: "header-tabs-current",
-      ArcStyle: "header-tabs"
+      ArcStyle: "header-tabs",
+      select: "Favorite"
     });
   }
 
   changeTabArc() {
     this.setState({
-      AllSelect: false,
-      FavSelect: false,
-      ArcSelect: true,
       AllStyle: "header-tabs",
       FavStyle: "header-tabs",
-      ArcStyle: "header-tabs-current"
+      ArcStyle: "header-tabs-current",
+      select: "Archived"
     });
   }
 
   render() {
+    let currentSelect = this.state.select + "Teams";
     return (
       <div className="app">
         <Sidenav />
         <div className="app-body">
-          <Navbar />
+          <Navbar user={this.state.currentUser} />
           <Header
             AllStyle={this.state.AllStyle}
             FavStyle={this.state.FavStyle}
@@ -69,6 +96,11 @@ export class App extends Component {
             changeTabFav={this.changeTabFav}
             changeTabArc={this.changeTabArc}
           />
+          <Content
+            teams={this.state[currentSelect]}
+            select={this.state.select}
+          />
+          <ActivityFeed activities={this.state.activities} />
         </div>
       </div>
     );

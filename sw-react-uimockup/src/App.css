@@ -1,8 +1,7 @@
-.app {
-  text-align: center;
-}
+/* .app {
+} */
 
 .app-body{
   display: flex;
   flex-direction: column;
-}
+} 

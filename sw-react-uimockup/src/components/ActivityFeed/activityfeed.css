@@ -1,0 +1,90 @@
+.activity-feed {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 268px;
+  left: 77%;
+  width: 20%;
+  height: auto;
+  font-family: "Proxima Nova";
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.05);
+}
+
+.activity-feed-top {
+  display: flex;
+  align-items: center;
+  height: 67px;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+}
+
+.activity-feed-title {
+  display: flex;
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+  margin-left: 25px;
+}
+
+.activity-feed-bot {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 25px 0px;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  width: 100%;
+  margin: 5px 30px;
+}
+
+.activity-top {
+  display: flex;
+  height: 40px;
+  width: 100%;
+}
+
+.activity-bot {
+  display: flex;
+  height: 20px;
+  width: 100%;
+}
+
+.activity-avatar {
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+}
+
+.activity-caption {
+  position: absolute;
+  padding-left: 45px;
+  padding-right: 38px;
+  padding-top: 4px;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.activity-time {
+  padding-left: 45px;
+  font-family: "Proxima Nova";
+  font-size: 13px;
+  line-height: 16px;
+  color: #565656;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}

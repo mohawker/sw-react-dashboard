@@ -8,7 +8,7 @@ class Navbar extends Component {
       <div className="navbar">
         <span className="navbar-app-name">NARWHAL</span>
         <span className="navbar-breadcrumbs">Teams</span>
-        <Settings />
+        <Settings user={this.props.user}/>
       </div>
     );
   }
