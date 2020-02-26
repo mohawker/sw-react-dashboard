@@ -93,7 +93,7 @@ export class App extends Component {
           <Loading />
           </div>
         ) : (
-          <div className="app-body">
+          <div className="app-main">
             <Navbar user={this.state.currentUser} />
             <Header
               select={this.state.select}
@@ -104,11 +104,13 @@ export class App extends Component {
               changeTabFav={this.changeTabFav}
               changeTabArc={this.changeTabArc}
             />
+            <div className="app-body">
             <Content
               teams={this.state[currentSelect]}
               select={this.state.select}
             />
             <ActivityFeed activities={this.state.activities} />
+            </div>
           </div>
         )}
       </div>
