@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sw-react-uimockup/static/css/main.b5f86687.chunk.css",
+    "main.css": "/sw-react-uimockup/static/css/main.30763284.chunk.css",
     "main.js": "/sw-react-uimockup/static/js/main.0cd4678c.chunk.js",
     "main.js.map": "/sw-react-uimockup/static/js/main.0cd4678c.chunk.js.map",
     "runtime-main.js": "/sw-react-uimockup/static/js/runtime-main.6079e4a3.js",
@@ -8,9 +8,9 @@
     "static/js/2.27be8c16.chunk.js": "/sw-react-uimockup/static/js/2.27be8c16.chunk.js",
     "static/js/2.27be8c16.chunk.js.map": "/sw-react-uimockup/static/js/2.27be8c16.chunk.js.map",
     "index.html": "/sw-react-uimockup/index.html",
-    "precache-manifest.f2369e87d2f35fb9263778d44d8e7994.js": "/sw-react-uimockup/precache-manifest.f2369e87d2f35fb9263778d44d8e7994.js",
+    "precache-manifest.0d12155e507d72ddbd47dbb6469bfea3.js": "/sw-react-uimockup/precache-manifest.0d12155e507d72ddbd47dbb6469bfea3.js",
     "service-worker.js": "/sw-react-uimockup/service-worker.js",
-    "static/css/main.b5f86687.chunk.css.map": "/sw-react-uimockup/static/css/main.b5f86687.chunk.css.map",
+    "static/css/main.30763284.chunk.css.map": "/sw-react-uimockup/static/css/main.30763284.chunk.css.map",
     "static/js/2.27be8c16.chunk.js.LICENSE.txt": "/sw-react-uimockup/static/js/2.27be8c16.chunk.js.LICENSE.txt",
     "static/media/index.css": "/sw-react-uimockup/static/media/Proxima_Nova.feface72.ttf",
     "static/media/caret-down.svg": "/sw-react-uimockup/static/media/caret-down.a545f7c0.svg",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.6079e4a3.js",
     "static/js/2.27be8c16.chunk.js",
-    "static/css/main.b5f86687.chunk.css",
+    "static/css/main.30763284.chunk.css",
     "static/js/main.0cd4678c.chunk.js"
   ]
 }
