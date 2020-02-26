@@ -2,12 +2,12 @@
 .content-card {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 290px;
     height: 180px;
     border: 1px solid #e4e7ec;
     box-sizing: border-box;
     border-radius: 4px;
-    margin: 8px 6.5px;
+    margin: 8px 5px;
   }
   
   .content-card:hover {
@@ -19,13 +19,19 @@
   
   .content-card-top {
     display: flex;
-    height: 119px;
+    height: 60px;
+    width: 100%;
+  }
+
+  .content-card-mid {
+    display: flex;
+    height: 59px;
     width: 100%;
     border-bottom: 1px solid #e4e7ec;
+    align-items: center;
   }
   
   .content-card-logo {
-    position: absolute;
     height: 36px;
     width: 36px;
     margin-left: 16px;
@@ -57,19 +63,17 @@
   }
   
   .content-card-star {
-    position: absolute;
+    display: flex;
     height: 16px;
     width: 16px;
-    margin-left: 275px;
-    margin-right: 14px;
-    margin-top: 16.39px;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 15px;
   }
   
   .content-card-text {
-    position: absolute;
     width: 270px;
-    margin-left: 15px;
-    margin-top: 70px;
+    margin: 0px 15px;
     font-family: "Proxima Nova";
     font-size: 14px;
     line-height: 17px;

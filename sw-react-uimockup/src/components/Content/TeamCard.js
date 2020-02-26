@@ -21,7 +21,7 @@ class TeamCard extends Component {
     let teamDetails = this.props.teamDetails;
     return (
       <div className="content-card">
-        <span className="content-card-top">
+        <div className="content-card-top">
           <img
             className="content-card-logo"
             alt="content-card-logo"
@@ -34,8 +34,10 @@ class TeamCard extends Component {
             alt="content-card-logo"
             src={starDefault}
           ></img>
+        </div>
+        <div className="content-card-mid">
           <span className="content-card-text">{teamDetails.description}</span>
-        </span>
+        </div>
         <span className="content-card-bot">
           <img
             className="content-card-campaign-icon"
