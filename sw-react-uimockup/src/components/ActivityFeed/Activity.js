@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "./activityfeed.css";
+//styles
+import "./activity.css";
 
 class Activity extends Component {
   decryptActivity(name, activity, target) {
@@ -27,12 +28,11 @@ class Activity extends Component {
     }
   }
 
-  unknownTime(time){
-    if (time){
-      return(<span className="activity-time"> {time}</span>)
-    }
-    else{
-      return(<span className="activity-time">Unknown Time</span>)
+  unknownTime(time) {
+    if (time) {
+      return <span className="activity-time"> {time}</span>;
+    } else {
+      return <span className="activity-time">Unknown Time</span>;
     }
   }
 

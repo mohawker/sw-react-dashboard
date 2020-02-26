@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Activity from "./Activity"
+//styles
 import "./activityfeed.css";
 
 class ActivityFeed extends Component {

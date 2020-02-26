@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+// dependencies
 import axios from "axios";
-// CSS File
+// styles
 import "./App.css";
-// Components
+// components
+import Loading from "./components/Loading/Loading";
 import Sidenav from "./components/Sidenav/Sidenav";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
@@ -20,9 +22,9 @@ export class App extends Component {
       AllTeams: [],
       FavoriteTeams: [],
       ArchivedTeams: [],
-      AllStyle: "header-tabs-current",
-      FavStyle: "header-tabs",
-      ArcStyle: "header-tabs"
+      AllStyle: "header-tab-current",
+      FavStyle: "header-tab",
+      ArcStyle: "header-tab"
     };
     this.changeTabAll = this.changeTabAll.bind(this);
     this.changeTabFav = this.changeTabFav.bind(this);
@@ -41,7 +43,6 @@ export class App extends Component {
       .then(res => {
         this.setState({
           loading: false,
-          data: res.data,
           AllTeams: res.data.teams,
           FavoriteTeams: res.data.teams.filter(teams => teams.is_favorited),
           ArchivedTeams: res.data.teams.filter(teams => teams.is_archived),
@@ -54,29 +55,30 @@ export class App extends Component {
       });
   };
 
+  //tab methods to set state and render content
   changeTabAll() {
     this.setState({
-      AllStyle: "header-tabs-current",
-      FavStyle: "header-tabs",
-      ArcStyle: "header-tabs",
+      AllStyle: "header-tab-current",
+      FavStyle: "header-tab",
+      ArcStyle: "header-tab",
       select: "All"
     });
   }
 
   changeTabFav() {
     this.setState({
-      AllStyle: "header-tabs",
-      FavStyle: "header-tabs-current",
-      ArcStyle: "header-tabs",
+      AllStyle: "header-tab",
+      FavStyle: "header-tab-current",
+      ArcStyle: "header-tab",
       select: "Favorite"
     });
   }
 
   changeTabArc() {
     this.setState({
-      AllStyle: "header-tabs",
-      FavStyle: "header-tabs",
-      ArcStyle: "header-tabs-current",
+      AllStyle: "header-tab",
+      FavStyle: "header-tab",
+      ArcStyle: "header-tab-current",
       select: "Archived"
     });
   }
@@ -86,22 +88,29 @@ export class App extends Component {
     return (
       <div className="app">
         <Sidenav />
-        <div className="app-body">
-          <Navbar user={this.state.currentUser} />
-          <Header
-            AllStyle={this.state.AllStyle}
-            FavStyle={this.state.FavStyle}
-            ArcStyle={this.state.ArcStyle}
-            changeTabAll={this.changeTabAll}
-            changeTabFav={this.changeTabFav}
-            changeTabArc={this.changeTabArc}
-          />
-          <Content
-            teams={this.state[currentSelect]}
-            select={this.state.select}
-          />
-          <ActivityFeed activities={this.state.activities} />
-        </div>
+        {this.state.loading === true ? (
+          <div className="app-loading">
+          <Loading />
+          </div>
+        ) : (
+          <div className="app-body">
+            <Navbar user={this.state.currentUser} />
+            <Header
+              select={this.state.select}
+              AllStyle={this.state.AllStyle}
+              FavStyle={this.state.FavStyle}
+              ArcStyle={this.state.ArcStyle}
+              changeTabAll={this.changeTabAll}
+              changeTabFav={this.changeTabFav}
+              changeTabArc={this.changeTabArc}
+            />
+            <Content
+              teams={this.state[currentSelect]}
+              select={this.state.select}
+            />
+            <ActivityFeed activities={this.state.activities} />
+          </div>
+        )}
       </div>
     );
   }

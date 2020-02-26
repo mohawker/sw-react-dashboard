@@ -1,0 +1,53 @@
+.activity {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width: 100%;
+    margin: 5px 30px;
+  }
+  
+  .activity-top {
+    display: flex;
+    height: 40px;
+    width: 100%;
+  }
+  
+  .activity-bot {
+    display: flex;
+    height: 20px;
+    width: 100%;
+  }
+  
+  .activity-avatar {
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+  }
+  
+  .activity-caption {
+    position: absolute;
+    padding-left: 45px;
+    padding-right: 38px;
+    padding-top: 4px;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    line-height: 17px;
+    color: #444444;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  
+  .activity-time {
+    padding-left: 45px;
+    font-family: "Proxima Nova";
+    font-size: 13px;
+    line-height: 16px;
+    color: #565656;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  

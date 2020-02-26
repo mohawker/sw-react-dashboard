@@ -1,0 +1,29 @@
+.sidetile {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    height:80px;
+  }
+  
+  .sidetile:hover {
+    background-color: #2995DA;
+    opacity: 0.5;
+    width: 100%;
+  }
+  
+  
+  .sidetile:last-child {
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .sidetile-current {
+    background-color: #2995da;
+    width:100%;
+  }
+
+  .sidetile-logo {
+    z-index: 2;
+  }
