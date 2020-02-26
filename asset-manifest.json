@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/sw-react-uimockup/static/css/main.55a08798.chunk.css",
-    "main.js": "/sw-react-uimockup/static/js/main.66775981.chunk.js",
-    "main.js.map": "/sw-react-uimockup/static/js/main.66775981.chunk.js.map",
+    "main.css": "/sw-react-uimockup/static/css/main.b5f86687.chunk.css",
+    "main.js": "/sw-react-uimockup/static/js/main.0cd4678c.chunk.js",
+    "main.js.map": "/sw-react-uimockup/static/js/main.0cd4678c.chunk.js.map",
     "runtime-main.js": "/sw-react-uimockup/static/js/runtime-main.6079e4a3.js",
     "runtime-main.js.map": "/sw-react-uimockup/static/js/runtime-main.6079e4a3.js.map",
-    "static/js/2.6a44bf0a.chunk.js": "/sw-react-uimockup/static/js/2.6a44bf0a.chunk.js",
-    "static/js/2.6a44bf0a.chunk.js.map": "/sw-react-uimockup/static/js/2.6a44bf0a.chunk.js.map",
+    "static/js/2.27be8c16.chunk.js": "/sw-react-uimockup/static/js/2.27be8c16.chunk.js",
+    "static/js/2.27be8c16.chunk.js.map": "/sw-react-uimockup/static/js/2.27be8c16.chunk.js.map",
     "index.html": "/sw-react-uimockup/index.html",
-    "precache-manifest.8ad1db267f08c18411703a84830849cc.js": "/sw-react-uimockup/precache-manifest.8ad1db267f08c18411703a84830849cc.js",
+    "precache-manifest.f2369e87d2f35fb9263778d44d8e7994.js": "/sw-react-uimockup/precache-manifest.f2369e87d2f35fb9263778d44d8e7994.js",
     "service-worker.js": "/sw-react-uimockup/service-worker.js",
-    "static/css/main.55a08798.chunk.css.map": "/sw-react-uimockup/static/css/main.55a08798.chunk.css.map",
-    "static/js/2.6a44bf0a.chunk.js.LICENSE.txt": "/sw-react-uimockup/static/js/2.6a44bf0a.chunk.js.LICENSE.txt",
+    "static/css/main.b5f86687.chunk.css.map": "/sw-react-uimockup/static/css/main.b5f86687.chunk.css.map",
+    "static/js/2.27be8c16.chunk.js.LICENSE.txt": "/sw-react-uimockup/static/js/2.27be8c16.chunk.js.LICENSE.txt",
     "static/media/index.css": "/sw-react-uimockup/static/media/Proxima_Nova.feface72.ttf",
     "static/media/caret-down.svg": "/sw-react-uimockup/static/media/caret-down.a545f7c0.svg",
     "static/media/chemical-loading-gif.gif": "/sw-react-uimockup/static/media/chemical-loading-gif.13edb3cc.gif",
@@ -26,13 +26,14 @@
     "static/media/logoAdd.svg": "/sw-react-uimockup/static/media/logoAdd.4d5cf6a3.svg",
     "static/media/logoTeamsGrey.svg": "/sw-react-uimockup/static/media/logoTeamsGrey.c8a86363.svg",
     "static/media/menu-help.svg": "/sw-react-uimockup/static/media/menu-help.18c768c8.svg",
+    "static/media/star-active.svg": "/sw-react-uimockup/static/media/star-active.152d7b5c.svg",
     "static/media/star-default.svg": "/sw-react-uimockup/static/media/star-default.7287f446.svg",
     "static/media/sw-logo-white.svg": "/sw-react-uimockup/static/media/sw-logo-white.6a5c384b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6079e4a3.js",
-    "static/js/2.6a44bf0a.chunk.js",
-    "static/css/main.55a08798.chunk.css",
-    "static/js/main.66775981.chunk.js"
+    "static/js/2.27be8c16.chunk.js",
+    "static/css/main.b5f86687.chunk.css",
+    "static/js/main.0cd4678c.chunk.js"
   ]
 }
