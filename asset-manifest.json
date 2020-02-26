@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/sw-react-uimockup/static/css/main.1782a880.chunk.css",
+    "main.js": "/sw-react-uimockup/static/js/main.ca48e8cc.chunk.js",
+    "main.js.map": "/sw-react-uimockup/static/js/main.ca48e8cc.chunk.js.map",
+    "runtime-main.js": "/sw-react-uimockup/static/js/runtime-main.6079e4a3.js",
+    "runtime-main.js.map": "/sw-react-uimockup/static/js/runtime-main.6079e4a3.js.map",
+    "static/js/2.6a44bf0a.chunk.js": "/sw-react-uimockup/static/js/2.6a44bf0a.chunk.js",
+    "static/js/2.6a44bf0a.chunk.js.map": "/sw-react-uimockup/static/js/2.6a44bf0a.chunk.js.map",
+    "index.html": "/sw-react-uimockup/index.html",
+    "precache-manifest.c1ed19e3adbbf1fbfbcef9650c927fc7.js": "/sw-react-uimockup/precache-manifest.c1ed19e3adbbf1fbfbcef9650c927fc7.js",
+    "service-worker.js": "/sw-react-uimockup/service-worker.js",
+    "static/css/main.1782a880.chunk.css.map": "/sw-react-uimockup/static/css/main.1782a880.chunk.css.map",
+    "static/js/2.6a44bf0a.chunk.js.LICENSE.txt": "/sw-react-uimockup/static/js/2.6a44bf0a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/sw-react-uimockup/static/media/Proxima_Nova.feface72.ttf",
+    "static/media/caret-down.svg": "/sw-react-uimockup/static/media/caret-down.a545f7c0.svg",
+    "static/media/chemical-loading-gif.gif": "/sw-react-uimockup/static/media/chemical-loading-gif.13edb3cc.gif",
+    "static/media/icon-campaign.svg": "/sw-react-uimockup/static/media/icon-campaign.62c57ded.svg",
+    "static/media/icon-conversations-small.svg": "/sw-react-uimockup/static/media/icon-conversations-small.b825e8cf.svg",
+    "static/media/icon-leads-small.svg": "/sw-react-uimockup/static/media/icon-leads-small.175c11b8.svg",
+    "static/media/icon-leads.svg": "/sw-react-uimockup/static/media/icon-leads.a8561513.svg",
+    "static/media/icon-mail.svg": "/sw-react-uimockup/static/media/icon-mail.f3cfd0cb.svg",
+    "static/media/icon-reports.svg": "/sw-react-uimockup/static/media/icon-reports.9ab34b7e.svg",
+    "static/media/icon-search.svg": "/sw-react-uimockup/static/media/icon-search.7d19281b.svg",
+    "static/media/icon-teams.svg": "/sw-react-uimockup/static/media/icon-teams.6301f1b2.svg",
+    "static/media/logoAdd.svg": "/sw-react-uimockup/static/media/logoAdd.4d5cf6a3.svg",
+    "static/media/logoTeamsGrey.svg": "/sw-react-uimockup/static/media/logoTeamsGrey.c8a86363.svg",
+    "static/media/menu-help.svg": "/sw-react-uimockup/static/media/menu-help.18c768c8.svg",
+    "static/media/star-default.svg": "/sw-react-uimockup/static/media/star-default.7287f446.svg",
+    "static/media/sw-logo-white.svg": "/sw-react-uimockup/static/media/sw-logo-white.6a5c384b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6079e4a3.js",
+    "static/js/2.6a44bf0a.chunk.js",
+    "static/css/main.1782a880.chunk.css",
+    "static/js/main.ca48e8cc.chunk.js"
+  ]
+}
