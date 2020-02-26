@@ -25,11 +25,11 @@
 } 
 
 .app-loading{
-  position: fixed;
+  display: flex;
   height: 100%;
   width: 100%;
-  text-align: center;
-  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
 } 
 
 /* for smaller screens */
