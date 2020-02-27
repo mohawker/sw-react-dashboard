@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/sw-react-uimockup/static/css/main.30763284.chunk.css",
-    "main.js": "/sw-react-uimockup/static/js/main.0cd4678c.chunk.js",
-    "main.js.map": "/sw-react-uimockup/static/js/main.0cd4678c.chunk.js.map",
+    "main.css": "/sw-react-uimockup/static/css/main.db78c042.chunk.css",
+    "main.js": "/sw-react-uimockup/static/js/main.b9dbe0db.chunk.js",
+    "main.js.map": "/sw-react-uimockup/static/js/main.b9dbe0db.chunk.js.map",
     "runtime-main.js": "/sw-react-uimockup/static/js/runtime-main.6079e4a3.js",
     "runtime-main.js.map": "/sw-react-uimockup/static/js/runtime-main.6079e4a3.js.map",
-    "static/js/2.27be8c16.chunk.js": "/sw-react-uimockup/static/js/2.27be8c16.chunk.js",
-    "static/js/2.27be8c16.chunk.js.map": "/sw-react-uimockup/static/js/2.27be8c16.chunk.js.map",
+    "static/js/2.8c907848.chunk.js": "/sw-react-uimockup/static/js/2.8c907848.chunk.js",
+    "static/js/2.8c907848.chunk.js.map": "/sw-react-uimockup/static/js/2.8c907848.chunk.js.map",
     "index.html": "/sw-react-uimockup/index.html",
-    "precache-manifest.0d12155e507d72ddbd47dbb6469bfea3.js": "/sw-react-uimockup/precache-manifest.0d12155e507d72ddbd47dbb6469bfea3.js",
+    "precache-manifest.495baa239d70f4ffde439221006ea5c3.js": "/sw-react-uimockup/precache-manifest.495baa239d70f4ffde439221006ea5c3.js",
     "service-worker.js": "/sw-react-uimockup/service-worker.js",
-    "static/css/main.30763284.chunk.css.map": "/sw-react-uimockup/static/css/main.30763284.chunk.css.map",
-    "static/js/2.27be8c16.chunk.js.LICENSE.txt": "/sw-react-uimockup/static/js/2.27be8c16.chunk.js.LICENSE.txt",
+    "static/css/main.db78c042.chunk.css.map": "/sw-react-uimockup/static/css/main.db78c042.chunk.css.map",
+    "static/js/2.8c907848.chunk.js.LICENSE.txt": "/sw-react-uimockup/static/js/2.8c907848.chunk.js.LICENSE.txt",
     "static/media/index.css": "/sw-react-uimockup/static/media/Proxima_Nova.feface72.ttf",
     "static/media/caret-down.svg": "/sw-react-uimockup/static/media/caret-down.a545f7c0.svg",
     "static/media/chemical-loading-gif.gif": "/sw-react-uimockup/static/media/chemical-loading-gif.13edb3cc.gif",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6079e4a3.js",
-    "static/js/2.27be8c16.chunk.js",
-    "static/css/main.30763284.chunk.css",
-    "static/js/main.0cd4678c.chunk.js"
+    "static/js/2.8c907848.chunk.js",
+    "static/css/main.db78c042.chunk.css",
+    "static/js/main.b9dbe0db.chunk.js"
   ]
 }
