@@ -4,16 +4,16 @@
   width: 100%;
 }
 
-.app-main{
+.app-main {
   position: absolute;
   display: flex;
   flex-direction: column;
   left: 80px;
   width: calc(100% - (80px));
   height: 100%;
-} 
+}
 
-.app-body{
+.app-body {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -22,15 +22,15 @@
   width: 100%;
   justify-content: space-evenly;
   align-items: flex-start;
-} 
+}
 
-.app-loading{
+.app-loading {
   display: flex;
   height: 100%;
   width: 100%;
   align-items: center;
   justify-content: center;
-} 
+}
 
 /* for smaller screens */
 

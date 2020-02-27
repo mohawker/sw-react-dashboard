@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import "./sidenav.css";
 import Sidetile from "./Sidetile";
-//logos
+// styles
+import "./sidenav.css";
+// assets
 import logoSW from "../../assets/Sidenav/sw-logo-white.svg";
 import logoCampaign from "../../assets/Sidenav/icon-campaign.svg";
 import logoReports from "../../assets/Sidenav/icon-reports.svg";

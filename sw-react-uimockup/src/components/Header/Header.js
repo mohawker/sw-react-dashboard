@@ -5,7 +5,6 @@ import HeaderBot from "./HeaderBot";
 import "./header.css";
 
 class Header extends Component {
-  
   render() {
     let AllStyle = this.props.AllStyle;
     let FavStyle = this.props.FavStyle;

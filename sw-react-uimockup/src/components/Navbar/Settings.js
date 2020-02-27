@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+// styles
 import "./settings.css";
+// assets
 import caret from "../../assets/Navbar/caret-down.svg";
 import iconMail from "../../assets/Navbar/icon-mail.svg";
 

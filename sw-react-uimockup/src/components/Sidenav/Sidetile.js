@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Spring } from "react-spring/renderprops";
+// styles
 import "./sidetile.css";
 
 class Sidetile extends Component {

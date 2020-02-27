@@ -35,7 +35,6 @@ export class App extends Component {
     this.fetchData();
   }
 
-  // fetch data from JSON-Server API & filter data
   fetchData = () => {
     this.setState({ loading: true });
     axios
@@ -55,7 +54,6 @@ export class App extends Component {
       });
   };
 
-  //tab methods to set state and render content
   changeTabAll() {
     this.setState({
       AllStyle: "header-tab-current",

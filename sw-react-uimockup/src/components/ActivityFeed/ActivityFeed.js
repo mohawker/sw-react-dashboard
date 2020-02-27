@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Spring } from "react-spring/renderprops";
 import Activity from "./Activity";
-//styles
+// styles
 import "./activityfeed.css";
 
 class ActivityFeed extends Component {

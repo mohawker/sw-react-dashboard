@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Spring } from "react-spring/renderprops";
-//styles
+// styles
 import "./teamcard.css";
-//logos
+// assets
 import starDefault from "../../assets/Content/star-default.svg";
 import starActive from "../../assets/Content/star-active.svg";
 import iconConv from "../../assets/Content/icon-conversations-small.svg";

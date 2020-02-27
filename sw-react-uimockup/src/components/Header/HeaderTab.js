@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//styles
+// styles
 import "./headertab.css";
 
 class HeaderTab extends Component {

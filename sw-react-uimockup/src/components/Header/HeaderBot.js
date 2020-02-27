@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import HeaderTab from "./HeaderTab";
-//styles
+// styles
 import "./headerbot.css";
-//logos
+// assets
 import logoSearch from "../../assets/Header/icon-search.svg";
 
 class HeaderBot extends Component {
@@ -29,20 +29,9 @@ class HeaderBot extends Component {
     return (
       <div className="header-bot">
         {headerTabs.map(tab => {
-          return (
-            <HeaderTab
-              style={tab.style}
-              method={tab.method}
-              key={tab.id}
-              name={tab.name}
-            />
-          );
+          return <HeaderTab style={tab.style} method={tab.method} key={tab.id} name={tab.name} />;
         })}
-        <img
-          src={logoSearch}
-          alt="search-logo"
-          className="header-bot-search-logo"
-        />
+        <img src={logoSearch} alt="search-logo" className="header-bot-search-logo" />
         <input type="text" placeholder="Search team name ..." />
       </div>
     );

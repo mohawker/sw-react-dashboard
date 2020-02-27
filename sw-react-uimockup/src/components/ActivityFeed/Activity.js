@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//styles
+// styles
 import "./activity.css";
 
 class Activity extends Component {
