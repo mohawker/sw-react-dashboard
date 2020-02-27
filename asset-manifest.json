@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sw-react-uimockup/static/css/main.4de48c52.chunk.css",
-    "main.js": "/sw-react-uimockup/static/js/main.b9dbe0db.chunk.js",
-    "main.js.map": "/sw-react-uimockup/static/js/main.b9dbe0db.chunk.js.map",
+    "main.css": "/sw-react-uimockup/static/css/main.7c57218b.chunk.css",
+    "main.js": "/sw-react-uimockup/static/js/main.f3f0e9bc.chunk.js",
+    "main.js.map": "/sw-react-uimockup/static/js/main.f3f0e9bc.chunk.js.map",
     "runtime-main.js": "/sw-react-uimockup/static/js/runtime-main.6079e4a3.js",
     "runtime-main.js.map": "/sw-react-uimockup/static/js/runtime-main.6079e4a3.js.map",
     "static/js/2.8c907848.chunk.js": "/sw-react-uimockup/static/js/2.8c907848.chunk.js",
     "static/js/2.8c907848.chunk.js.map": "/sw-react-uimockup/static/js/2.8c907848.chunk.js.map",
     "index.html": "/sw-react-uimockup/index.html",
-    "precache-manifest.15916b07359ad876fb69a0e5029d6bde.js": "/sw-react-uimockup/precache-manifest.15916b07359ad876fb69a0e5029d6bde.js",
+    "precache-manifest.6306ca696b92259ce87b53ba12198702.js": "/sw-react-uimockup/precache-manifest.6306ca696b92259ce87b53ba12198702.js",
     "service-worker.js": "/sw-react-uimockup/service-worker.js",
-    "static/css/main.4de48c52.chunk.css.map": "/sw-react-uimockup/static/css/main.4de48c52.chunk.css.map",
+    "static/css/main.7c57218b.chunk.css.map": "/sw-react-uimockup/static/css/main.7c57218b.chunk.css.map",
     "static/js/2.8c907848.chunk.js.LICENSE.txt": "/sw-react-uimockup/static/js/2.8c907848.chunk.js.LICENSE.txt",
     "static/media/index.css": "/sw-react-uimockup/static/media/Proxima_Nova.feface72.ttf",
     "static/media/caret-down.svg": "/sw-react-uimockup/static/media/caret-down.a545f7c0.svg",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.6079e4a3.js",
     "static/js/2.8c907848.chunk.js",
-    "static/css/main.4de48c52.chunk.css",
-    "static/js/main.b9dbe0db.chunk.js"
+    "static/css/main.7c57218b.chunk.css",
+    "static/js/main.f3f0e9bc.chunk.js"
   ]
 }
