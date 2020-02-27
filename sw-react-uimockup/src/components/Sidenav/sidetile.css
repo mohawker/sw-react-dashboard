@@ -9,7 +9,6 @@
 .sidetile:last-child {
   position: absolute;
   bottom: 0;
-  justify-content: center;
 }
 
 .sidetile-current {
@@ -20,6 +19,6 @@
 .sidetile-logo {
   z-index: 2;
   cursor: pointer;
-  height: 30px;
-  width: 30px;
+  height: auto;
+  width: auto;
 }
