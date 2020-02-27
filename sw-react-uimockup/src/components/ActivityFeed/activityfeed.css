@@ -37,7 +37,7 @@
 /* for smaller screens, remove activity feed */
 
 @media only screen and (max-width: 1000px) {
-  .activity-feed{
+  .activity-feed {
     display: none;
   }
 }

@@ -25,12 +25,7 @@ class Sidenav extends Component {
         </div>
         {sideLogos.map(logo => {
           return (
-            <Sidetile
-              logoSrc={logo.image}
-              key={logo.id}
-              name={logo.name}
-              style={logo.style}
-            />
+            <Sidetile logoSrc={logo.image} key={logo.id} name={logo.name} style={logo.style} />
           );
         })}
       </div>

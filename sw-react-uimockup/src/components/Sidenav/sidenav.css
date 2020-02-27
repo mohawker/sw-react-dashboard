@@ -10,8 +10,7 @@
   background-color: #042235;
   width: 80px;
   color: white;
-  box-shadow: inset -4px 0px 4px rgba(2, 15, 24, 0.569466),
-    inset 0px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset -4px 0px 4px rgba(2, 15, 24, 0.569466), inset 0px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .sidenav-swlogo {
@@ -19,7 +18,3 @@
   margin: 24px 0px;
   cursor: pointer;
 }
-
-/* .current-sidetile-logo {
-  margin: 24px 0px;
-} */

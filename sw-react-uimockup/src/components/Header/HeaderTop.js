@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-//styles
-import "./headertop.css"
-//logos
+// styles
+import "./headertop.css";
+// logos
 import logoTeamsGrey from "../../assets/Header/logoTeamsGrey.svg";
 import logoAdd from "../../assets/Header/logoAdd.svg";
 
@@ -15,7 +15,7 @@ class HeaderTop extends Component {
           alt="logo-teams-grey"
         />
         <span className="header-top-title">Teams</span>
-        <button className="header-top-button">
+        <button className="header-top-button ripple">
           <img
             className="header-top-button-icon"
             src={logoAdd}

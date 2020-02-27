@@ -52,9 +52,7 @@ class Activity extends Component {
             activityDetails.target
           )}
         </div>
-        <div className="activity-bottom">
-          {this.unknownTime(activityDetails.created_at)}
-        </div>
+        <div className="activity-bottom">{this.unknownTime(activityDetails.created_at)}</div>
       </div>
     );
   }

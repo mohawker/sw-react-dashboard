@@ -14,15 +14,9 @@ class Settings extends Component {
         <img src={avatarSrc} className="navbar-settings-dp" alt="navbar-dp" />
         <span className="navbar-settings-greetings"> Hello, {userName} </span>
         <span className="navbar-settings-mail">
-          <img
-            src={iconMail}
-            className="navbar-settings-mail-logo"
-            alt="icon-mail"
-          />
+          <img src={iconMail} className="navbar-settings-mail-logo" alt="icon-mail" />
           <span className="navbar-settings-mail-badge">
-            <span className="navbar-settings-mail-badge-count">
-              {notifCount}
-            </span>
+            <span className="navbar-settings-mail-badge-count">{notifCount}</span>
           </span>
         </span>
       </div>

@@ -90,7 +90,7 @@ export class App extends Component {
         <Sidenav />
         {this.state.loading === true ? (
           <div className="app-loading">
-          <Loading />
+            <Loading />
           </div>
         ) : (
           <div className="app-main">
@@ -105,11 +105,8 @@ export class App extends Component {
               changeTabArc={this.changeTabArc}
             />
             <div className="app-body">
-            <Content
-              teams={this.state[currentSelect]}
-              select={this.state.select}
-            />
-            <ActivityFeed activities={this.state.activities} />
+              <Content teams={this.state[currentSelect]} select={this.state.select} />
+              <ActivityFeed activities={this.state.activities} />
             </div>
           </div>
         )}
