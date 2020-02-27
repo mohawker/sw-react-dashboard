@@ -5,7 +5,7 @@ The challenge was to implement an app that looks as close as possible to the att
 Hosted on GitHub pages at: https://mohawker.github.io/sw-react-dashboard/  
 Heroku Mock API (JSON-Server) is hosted at: https://sw-test-api.herokuapp.com/
 
-**Do note the server will be asleep from 2.30 am to 8.30 am (GMT +8 // SG Time Zone)**
+***Do note the Heroku server will be asleep from 2.30 am to 8.30 am (GMT +8 // SG Time Zone)***
 
 Alternatively, you can view the web application by cloning the repo and running the following commands:   
 (note the directory is `sw-react-uimockup`)
