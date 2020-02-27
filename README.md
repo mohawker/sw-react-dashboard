@@ -16,9 +16,9 @@ npm install
 npm start
 ```
 
-##### Libraries Used:
+#### Libraries Used:
 - axios (fetching mock API data)
 - react-spring (wanted to learn an animation library while undertaking this project)
 
-##### GIFs used in webapp:     
+#### GIFs used in webapp:     
 - https://i.pinimg.com/originals/c9/ff/af/c9ffaff3f15bd19379a360edb33080d5.gif (loading gif)  
