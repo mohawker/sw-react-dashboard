@@ -1,4 +1,4 @@
-# sw-react-uimockup
+# sw-react-dashboard
 React Web Application based on a UI mockup given by Saleswhale.   
 The challenge was to implement an app that looks as close as possible to the attached mockup.  
 
