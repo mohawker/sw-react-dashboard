@@ -16,6 +16,10 @@ npm install
 npm start
 ```
 
+#### Added Functionality:
+- Able to star teams
+- Responsive to webpages of different size (but not mobile-compatible)
+
 #### Libraries Used:
 - axios (fetching mock API data)
 - react-spring (wanted to learn an animation library while undertaking this project)
