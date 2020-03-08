@@ -24,7 +24,8 @@ export class App extends Component {
       ArchivedTeams: [],
       AllStyle: "header-tab-current",
       FavStyle: "header-tab",
-      ArcStyle: "header-tab"
+      ArcStyle: "header-tab",
+      search: ""
     };
     this.changeTabAll = this.changeTabAll.bind(this);
     this.changeTabFav = this.changeTabFav.bind(this);
@@ -81,8 +82,15 @@ export class App extends Component {
     });
   }
 
+  updateSearch = event => {
+    this.setState({ search: event.target.value.substr(0, 20) });
+  };
+
   render() {
     let currentSelect = this.state.select + "Teams";
+    let teams = this.state[currentSelect].filter(team => {
+      return team.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+    });
     return (
       <div className="app">
         <Sidenav />
@@ -101,9 +109,11 @@ export class App extends Component {
               changeTabAll={this.changeTabAll}
               changeTabFav={this.changeTabFav}
               changeTabArc={this.changeTabArc}
+              search={this.state.search}
+              updateSearch={this.updateSearch}
             />
             <div className="app-body">
-              <Content teams={this.state[currentSelect]} select={this.state.select} />
+              <Content teams={teams} select={this.state.select} fetchData={this.fetchData} />
               <ActivityFeed activities={this.state.activities} />
             </div>
           </div>

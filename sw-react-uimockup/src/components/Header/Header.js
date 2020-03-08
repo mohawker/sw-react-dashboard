@@ -19,6 +19,8 @@ class Header extends Component {
           changeTabAll={this.props.changeTabAll}
           changeTabFav={this.props.changeTabFav}
           changeTabArc={this.props.changeTabArc}
+          search={this.props.search}
+          updateSearch={this.props.updateSearch}
         />
       </div>
     );

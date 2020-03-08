@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 import { Spring } from "react-spring/renderprops";
 // styles
 import "./teamcard.css";
@@ -12,22 +13,19 @@ class TeamCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      src: starDefault,
-      hovered: false
+      hovered: false,
+      favorited: false
     };
-    this.toggleStar = this.toggleStar.bind(this);
+    // this.handleFavorite = this.handleFavorite.bind(this);
+  }
+
+  componentDidMount() {
+    this.getFavorited();
   }
 
   setHover = () => this.setState({ hovered: true });
   cancelHover = () => this.setState({ hovered: false });
-
-  toggleStar() {
-    if (this.state.src === starDefault) {
-      this.setState({ src: starActive });
-    } else {
-      this.setState({ src: starDefault });
-    }
-  }
+  getFavorited = () => this.setState({ favorited: this.props.teamDetails.is_favorited });
 
   unknownTime(time) {
     if (time) {
@@ -36,6 +34,40 @@ class TeamCard extends Component {
       return <span className="content-card-date">Created date unspecified</span>;
     }
   }
+
+  renderStar() {
+    if (this.state.favorited) {
+      return (
+        <img
+          className="content-card-star"
+          alt="content-card-logo"
+          src={starActive}
+          onClick={this.handleFavorite}
+        ></img>
+      );
+    } else {
+      return (
+        <img
+          className="content-card-star"
+          alt="content-card-logo"
+          src={starDefault}
+          onClick={this.handleFavorite}
+        ></img>
+      );
+    }
+  }
+
+  handleFavorite = () => {
+    axios
+      .patch("https://sw-test-api.herokuapp.com/teams/" + this.props.teamDetails.id, {
+        is_favorited: !this.state.favorited
+      })
+      .then(res => {
+        console.log(res);
+        this.props.fetchData();
+      })
+      .catch(err => console.log(err));
+  };
 
   render() {
     let teamDetails = this.props.teamDetails;
@@ -63,12 +95,7 @@ class TeamCard extends Component {
               ></img>
               <span className="content-card-title">{teamDetails.name}</span>
               {this.unknownTime(teamDetails.created_at)}
-              <img
-                className="content-card-star"
-                alt="content-card-logo"
-                src={this.state.src}
-                onClick={this.toggleStar}
-              ></img>
+              {this.renderStar(teamDetails.is_favorited)}
             </div>
             <div className="content-card-mid">
               <span className="content-card-text">{teamDetails.description}</span>
