@@ -9,9 +9,9 @@ class ActivityFeed extends Component {
     let activities = this.props.activities;
     return (
       <Spring
-        from={{ opacity: 0, marginTop: 0 }}
+        from={{ opacity: 0, marginTop: 84 }}
         to={{ opacity: 1.0, marginTop: 42 }}
-        config={{ duration: 500 }}
+        config={{ duration: 250 }}
       >
         {props => (
           <div className="activity-feed" style={props}>

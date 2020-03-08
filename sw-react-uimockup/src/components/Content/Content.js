@@ -10,9 +10,9 @@ export class Content extends Component {
     let selection = this.props.select;
     return (
       <Spring
-        from={{ opacity: 0, marginTop: 0 }}
+        from={{ opacity: 0, marginTop: 84 }}
         to={{ opacity: 1.0, marginTop: 42 }}
-        config={{ duration: 500 }}
+        config={{ duration: 250 }}
       >
         {props => (
           <div className="content" style={props}>

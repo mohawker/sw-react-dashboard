@@ -62,6 +62,7 @@ export class App extends Component {
       ArcStyle: "header-tab",
       select: "All"
     });
+    this.fetchData();
   }
 
   changeTabFav() {
@@ -71,6 +72,7 @@ export class App extends Component {
       ArcStyle: "header-tab",
       select: "Favorite"
     });
+    this.fetchData();
   }
 
   changeTabArc() {
@@ -80,6 +82,7 @@ export class App extends Component {
       ArcStyle: "header-tab-current",
       select: "Archived"
     });
+    this.fetchData();
   }
 
   updateSearch = event => {
