@@ -88,9 +88,9 @@ export class App extends Component {
 
   render() {
     let currentSelect = this.state.select + "Teams";
-    let teams = this.state[currentSelect].filter(team => {
-      return team.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
-    });
+    let teams = this.state[currentSelect].filter(
+      team => team.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
+    );
     return (
       <div className="app">
         <Sidenav />
