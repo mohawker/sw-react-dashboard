@@ -10,9 +10,9 @@ export class Content extends Component {
     let selection = this.props.select;
     return (
       <Spring
-        from={{ opacity: 0, marginTop: 0 }}
+        from={{ opacity: 0, marginTop: 84 }}
         to={{ opacity: 1.0, marginTop: 42 }}
-        config={{ duration: 500 }}
+        config={{ duration: 250 }}
       >
         {props => (
           <div className="content" style={props}>
@@ -24,7 +24,9 @@ export class Content extends Component {
             </div>
             <div className="content-bot">
               {teams.map(team => {
-                return <TeamCard teamDetails={team} key={team.id} />;
+                return (
+                  <TeamCard teamDetails={team} key={team.id} fetchData={this.props.fetchData} />
+                );
               })}
             </div>
           </div>

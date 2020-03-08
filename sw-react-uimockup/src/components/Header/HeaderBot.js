@@ -32,7 +32,12 @@ class HeaderBot extends Component {
           return <HeaderTab style={tab.style} method={tab.method} key={tab.id} name={tab.name} />;
         })}
         <img src={logoSearch} alt="search-logo" className="header-bot-search-logo" />
-        <input type="text" placeholder="Search team name ..." />
+        <input
+          type="text"
+          placeholder="Search team name ..."
+          value={this.props.search}
+          onChange={this.props.updateSearch}
+        />
       </div>
     );
   }
