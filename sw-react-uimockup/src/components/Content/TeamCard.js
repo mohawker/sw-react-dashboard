@@ -27,7 +27,7 @@ class TeamCard extends Component {
   cancelHover = () => this.setState({ hovered: false });
   getFavorited = () => this.setState({ favorited: this.props.teamDetails.is_favorited });
 
-  unknownTime(time) {
+  renderTime(time) {
     if (time) {
       return <span className="content-card-date">Created {time}</span>;
     } else {
@@ -97,7 +97,7 @@ class TeamCard extends Component {
                 src={teamDetails.image}
               ></img>
               <span className="content-card-title">{teamDetails.name}</span>
-              {this.unknownTime(teamDetails.created_at)}
+              {this.renderTime(teamDetails.created_at)}
               {this.renderStar(teamDetails.is_favorited)}
             </div>
             <div className="content-card-mid">
