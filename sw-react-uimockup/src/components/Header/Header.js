@@ -11,7 +11,7 @@ class Header extends Component {
     let ArcStyle = this.props.ArcStyle;
     return (
       <div className="header">
-        <HeaderTop />
+        <HeaderTop toggleForm={this.props.toggleForm} />
         <HeaderBot
           AllStyle={AllStyle}
           FavStyle={FavStyle}

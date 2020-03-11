@@ -25,7 +25,8 @@ export class App extends Component {
       AllStyle: "header-tab-current",
       FavStyle: "header-tab",
       ArcStyle: "header-tab",
-      search: ""
+      search: "",
+      showForm: false
     };
     this.changeTabAll = this.changeTabAll.bind(this);
     this.changeTabFav = this.changeTabFav.bind(this);
@@ -89,6 +90,18 @@ export class App extends Component {
     this.setState({ search: event.target.value.substr(0, 20) });
   };
 
+  toggleForm = () => {
+    this.setState({ showForm: !this.state.showForm });
+  };
+
+  showForm = () => {
+    if (this.state.showForm === true) {
+      console.log("show form");
+    } else {
+      console.log("hide form");
+    }
+  };
+
   render() {
     let currentSelect = this.state.select + "Teams";
     let teams = this.state[currentSelect].filter(
@@ -114,10 +127,12 @@ export class App extends Component {
               changeTabArc={this.changeTabArc}
               search={this.state.search}
               updateSearch={this.updateSearch}
+              toggleForm={this.toggleForm}
             />
             <div className="app-body">
               <Content teams={teams} select={this.state.select} fetchData={this.fetchData} />
               <ActivityFeed activities={this.state.activities} />
+              {this.showForm()}
             </div>
           </div>
         )}
