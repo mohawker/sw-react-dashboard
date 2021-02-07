@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/sw-react-dashboard/static/css/main.78d42a8b.chunk.css",
-    "main.js": "/sw-react-dashboard/static/js/main.2a293800.chunk.js",
-    "main.js.map": "/sw-react-dashboard/static/js/main.2a293800.chunk.js.map",
+    "main.css": "/sw-react-dashboard/static/css/main.14f764dd.chunk.css",
+    "main.js": "/sw-react-dashboard/static/js/main.2f8040a6.chunk.js",
+    "main.js.map": "/sw-react-dashboard/static/js/main.2f8040a6.chunk.js.map",
     "runtime-main.js": "/sw-react-dashboard/static/js/runtime-main.dbadc467.js",
     "runtime-main.js.map": "/sw-react-dashboard/static/js/runtime-main.dbadc467.js.map",
-    "static/js/2.ee7c3951.chunk.js": "/sw-react-dashboard/static/js/2.ee7c3951.chunk.js",
-    "static/js/2.ee7c3951.chunk.js.map": "/sw-react-dashboard/static/js/2.ee7c3951.chunk.js.map",
+    "static/js/2.a25c66a1.chunk.js": "/sw-react-dashboard/static/js/2.a25c66a1.chunk.js",
+    "static/js/2.a25c66a1.chunk.js.map": "/sw-react-dashboard/static/js/2.a25c66a1.chunk.js.map",
     "index.html": "/sw-react-dashboard/index.html",
-    "precache-manifest.2e38f1c16d8c372f79c0fcc7d953dd2e.js": "/sw-react-dashboard/precache-manifest.2e38f1c16d8c372f79c0fcc7d953dd2e.js",
+    "precache-manifest.a8e37c07a96f800c8b804fd18530db4a.js": "/sw-react-dashboard/precache-manifest.a8e37c07a96f800c8b804fd18530db4a.js",
     "service-worker.js": "/sw-react-dashboard/service-worker.js",
-    "static/css/main.78d42a8b.chunk.css.map": "/sw-react-dashboard/static/css/main.78d42a8b.chunk.css.map",
-    "static/js/2.ee7c3951.chunk.js.LICENSE.txt": "/sw-react-dashboard/static/js/2.ee7c3951.chunk.js.LICENSE.txt",
+    "static/css/main.14f764dd.chunk.css.map": "/sw-react-dashboard/static/css/main.14f764dd.chunk.css.map",
+    "static/js/2.a25c66a1.chunk.js.LICENSE.txt": "/sw-react-dashboard/static/js/2.a25c66a1.chunk.js.LICENSE.txt",
     "static/media/index.css": "/sw-react-dashboard/static/media/Proxima_Nova.feface72.ttf",
     "static/media/caret-down.svg": "/sw-react-dashboard/static/media/caret-down.a545f7c0.svg",
     "static/media/chemical-loading-gif.gif": "/sw-react-dashboard/static/media/chemical-loading-gif.13edb3cc.gif",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.dbadc467.js",
-    "static/js/2.ee7c3951.chunk.js",
-    "static/css/main.78d42a8b.chunk.css",
-    "static/js/main.2a293800.chunk.js"
+    "static/js/2.a25c66a1.chunk.js",
+    "static/css/main.14f764dd.chunk.css",
+    "static/js/main.2f8040a6.chunk.js"
   ]
 }
