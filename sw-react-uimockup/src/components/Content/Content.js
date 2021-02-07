@@ -25,7 +25,12 @@ export class Content extends Component {
             <div className="content-bot">
               {teams.map(team => {
                 return (
-                  <TeamCard teamDetails={team} key={team.id} fetchData={this.props.fetchData} />
+                  <TeamCard
+                    teamDetails={team}
+                    key={team.id}
+                    fetchData={this.props.fetchData}
+                    appendFavorite={this.props.appendFavorite}
+                  />
                 );
               })}
             </div>

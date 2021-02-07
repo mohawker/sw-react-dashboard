@@ -59,6 +59,7 @@ class TeamCard extends Component {
 
   // Running callback on setState to ensure state is set, prefer to fetch data on tab change rather than everytime a button is clicked
   handleFavorite = () => {
+    this.props.appendFavorite(this.props.teamDetails);
     this.setState({ favorited: !this.state.favorited }, () =>
       axios
         .patch("https://sw-test-api.herokuapp.com/teams/" + this.props.teamDetails.id, {

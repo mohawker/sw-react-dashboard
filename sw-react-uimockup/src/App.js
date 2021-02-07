@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
 import Content from "./components/Content/Content";
 import ActivityFeed from "./components/ActivityFeed/ActivityFeed";
+import Form from "./components/Content/Form";
 
 export class App extends Component {
   constructor(props) {
@@ -63,7 +64,6 @@ export class App extends Component {
       ArcStyle: "header-tab",
       select: "All"
     });
-    this.fetchData();
   }
 
   changeTabFav() {
@@ -73,7 +73,6 @@ export class App extends Component {
       ArcStyle: "header-tab",
       select: "Favorite"
     });
-    this.fetchData();
   }
 
   changeTabArc() {
@@ -83,7 +82,6 @@ export class App extends Component {
       ArcStyle: "header-tab-current",
       select: "Archived"
     });
-    this.fetchData();
   }
 
   updateSearch = event => {
@@ -96,19 +94,41 @@ export class App extends Component {
 
   showForm = () => {
     if (this.state.showForm === true) {
-      console.log("show form");
+      return <Form toggleForm={this.toggleForm} />;
     } else {
       console.log("hide form");
     }
   };
 
+  appendFavorite = team => {
+    let currentFavorites = this.state.FavoriteTeams;
+    let currentActivity = this.state.activities;
+    let activity = {
+      id: currentActivity.length + 1,
+      person: this.state.currentUser,
+      action: "favorited_team",
+      target: team.name,
+      created_at: "Seconds ago"
+    };
+    if (currentFavorites.find(element => element.id === team.id)) {
+      currentFavorites = currentFavorites.filter(element => element.id !== team.id);
+      activity.action = "unfavorited_team";
+    } else {
+      currentFavorites.push(team);
+    }
+    this.setState({ FavoriteTeams: currentFavorites });
+    currentActivity.unshift(activity);
+    this.setState({ activities: currentActivity }, () => console.log(this.state.activities));
+  };
+
   render() {
-    let currentSelect = this.state.select + "Teams";
-    let teams = this.state[currentSelect].filter(
+    const currentSelect = this.state.select + "Teams";
+    const teams = this.state[currentSelect].filter(
       team => team.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
     );
     return (
       <div className="app">
+        {this.showForm()}
         <Sidenav />
         {this.state.loading === true ? (
           <div className="app-loading">
@@ -130,9 +150,13 @@ export class App extends Component {
               toggleForm={this.toggleForm}
             />
             <div className="app-body">
-              <Content teams={teams} select={this.state.select} fetchData={this.fetchData} />
+              <Content
+                teams={teams}
+                select={this.state.select}
+                fetchData={this.fetchData}
+                appendFavorite={this.appendFavorite}
+              />
               <ActivityFeed activities={this.state.activities} />
-              {this.showForm()}
             </div>
           </div>
         )}

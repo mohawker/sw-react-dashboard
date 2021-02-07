@@ -23,6 +23,18 @@ class Activity extends Component {
             <b>{name}</b> archived the team <b>{target}</b>.
           </span>
         );
+      case "favorited_team":
+        return (
+          <span className="activity-caption">
+            <b>{name}</b> favorited the team <b>{target}</b>.
+          </span>
+        );
+      case "unfavorited_team":
+        return (
+          <span className="activity-caption">
+            <b>{name}</b> unfavorited the team <b>{target}</b>.
+          </span>
+        );
       default:
         return <span>Unknown Activity - Check API</span>;
     }
